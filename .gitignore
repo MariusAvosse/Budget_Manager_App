@@ -1,0 +1,30 @@
+# === Python / FastAPI ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+.env
+venv/
+.env/
+*.log
+.DS_Store
+
+# === IDEs ===
+.vscode/
+.idea/
+*.swp
+
+# === Compiled files ===
+*.so
+*.dll
+*.dylib
+
+# === Coverage / Testing ===
+.coverage
+htmlcov/
+.pytest_cache/
+
+# === OS files ===
+Thumbs.db
