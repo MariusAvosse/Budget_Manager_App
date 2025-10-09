@@ -3,6 +3,11 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.routes import auth, transactions
 
+from app.database import Base, engine  
+
+# Création des tables au démarrage
+Base.metadata.create_all(bind=engine)
+
 app = FastAPI(title="Budget Manager API")
 
 # Configuration CORS
